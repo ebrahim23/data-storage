@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    background-color: hsl(229, 57%, 11%);
+    color: #FFF;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: url(./images/bg-desktop.svg) no-repeat center center/cover;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content .box1 {
+    background-color: hsl(228, 56%, 26%);
+    padding: 40px;
+    margin-right: 20px;
+    border-top-right-radius: 80px;
+    width: 30vh;
+    height: 100px;
+}
+.box1 .logo {
+    display: block;
+    margin-bottom: 20px;
+    width: 120px;
+}
+.box1 .icon {
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.content .box2 {
+    background-color: hsl(228, 56%, 26%);
+    padding: 20px;
+    border-radius: 10px;
+    height: 80px;
+    position: relative;
+    top: 60px;
+    width: 70vh;
+}
+.sub-box {
+    background-color: #FFF;
+    color: hsl(229, 7%, 55%);
+    position: absolute;
+    right: 30px;
+    top: -45px;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.sub-box span {
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+.box2 .progress {
+    margin: 10px 0px;
+    width: 100%;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 25px;
+    height: 20px;
+}
+.box2 .progress-bar {
+    display: block;
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    background: linear-gradient(
+        75deg,
+        rgba(255, 163, 153, 1) 26%,
+        rgba(255, 77, 151, 1) 70%
+    );
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 2px;
+    left: 2px;
+    color: hsl(243, 100%, 93%);
+    font-size: 14px;
+    text-align: right;
+    padding-right: 3px;
+}
+span.right {
+    float: right;
+}
+
+@media(max-width: 775px) {
+  .container {
+    height: 100vh;
+    background: url(./images/bg-desktop.svg) no-repeat center center/cover;
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  .content .box1 {
+    background-color: hsl(228, 56%, 26%);
+    padding: 40px;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-top-right-radius: 80px;
+    width: 100%;
+    height: 100px;
+  }
+  .content .box2 {
+    background-color: hsl(228, 56%, 26%);
+    padding: 40px;
+    margin-right: 20px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 100px;
+  }
+  .sub-box {
+    right: 30%;
+    top: 140px;
+  }
+}
